@@ -11,7 +11,7 @@ setup(
 	name='frappe_hijri_datepicker',
 	version=version,
 	description='The Hijri(UmmAlQura) calendar is the official calendar in countries around the Gulf, especially yemen Arabia.',
-	author='Mostafa Mohamed',
+	author='ibrahim almoutwakel',
 	author_email='m.dev.odoo@gmail.com',
 	packages=find_packages(),
 	zip_safe=False,
