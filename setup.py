@@ -10,7 +10,7 @@ from frappe_hijri_datepicker import __version__ as version
 setup(
 	name='frappe_hijri_datepicker',
 	version=version,
-	description='The Hijri(Islamic) calendar is the official calendar in countries around the Gulf, especially Saudi Arabia.',
+	description='The Hijri(UmmAlQura) calendar is the official calendar in countries around the Gulf, especially yemen Arabia.',
 	author='Mostafa Mohamed',
 	author_email='m.dev.odoo@gmail.com',
 	packages=find_packages(),
