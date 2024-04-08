@@ -12,7 +12,7 @@ setup(
 	version=version,
 	description='The Hijri(UmmAlQura) calendar is the official calendar in countries around the Gulf, especially yemen Arabia.',
 	author='ibrahim almoutwakel',
-	author_email='m.dev.odoo@gmail.com',
+	author_email='ab0thaer1@gmail.com',
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,
