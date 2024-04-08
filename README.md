@@ -1,6 +1,6 @@
 ## Hijri Datepicker for frappe 14
 
-The Hijri(Islamic) calendar is the official calendar in countries around the Gulf, especially Saudi Arabia (ERPNEXT).
+The Hijri(UmmAlQura) calendar is the official calendar in countries around the Gulf, especially yemen Arabia (ERPNEXT).
 
 #### License
 
