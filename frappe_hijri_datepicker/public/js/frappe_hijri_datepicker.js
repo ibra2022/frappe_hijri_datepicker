@@ -11,13 +11,13 @@ frappe.ui.form.ControlDate = frappe.ui.form.ControlDate.extend({
             if (date.length === 0) {
                 return false
             }
-            var jd = $.calendars.instance('islamic').toJD(parseInt(date[0].year()), parseInt(date[0].month()), parseInt(date[0].day()));
+            var jd = $.calendars.instance('ummalqura').toJD(parseInt(date[0].year()), parseInt(date[0].month()), parseInt(date[0].day()));
             var date = $.calendars.instance('gregorian').fromJD(jd);
             var date_value = new Date(parseInt(date.year()), parseInt(date.month()) - 1, parseInt(date.day()));
             if (date_value){self.$input.val(self.set_formatted_input(date_value));}
         }
         $(self.$input_extra_date).calendarsPicker({
-            calendar: $.calendars.instance('islamic', 'ar'),
+            calendar: $.calendars.instance('ummalqura', 'ar'),
             onSelect: convert_to_hijri,
             showOnFocus: true,
         });
@@ -29,7 +29,7 @@ frappe.ui.form.ControlDate = frappe.ui.form.ControlDate.extend({
             var month = today.getMonth() + 1;
             var year = today.getFullYear();
             var calendar = $.calendars.instance('gregorian', 'ar');
-            var hijri_calendar = $.calendars.instance('islamic', 'ar');
+            var hijri_calendar = $.calendars.instance('ummalqura', 'ar');
             var jd = calendar.toJD(year, month, day);
             var date = hijri_calendar.fromJD(jd);
             var res = hijri_calendar.formatDate('yyyy-mm-dd', date.add(0, 'd'));
